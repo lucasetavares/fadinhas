@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+:root {
+    --fonte01: 'Indie Flower', 'cursive';
+    --fonte02: 'Martian Mono', monospace;
+    --fonte03: 'Arial', 'Helvetica', "sans-serif"
+}
+
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: #C2F4FF;
+    font-family: var(--fonte03);
+}
+
+
+header {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;    
+}
+
+
+header > p {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-family: var(--fonte02);
+}
+
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte01);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 0.5em;
+}
+
+section.normal {
+    background-color: #C2F4FF;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(71, 69, 69, 0.366);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.409);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.234);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/ahri.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/lux.png);
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
